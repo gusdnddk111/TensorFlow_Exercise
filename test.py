@@ -3,9 +3,9 @@
 import tensorflow as tf
 from numpy import genfromtxt
 
-training_data = genfromtxt('training_data.csv', delimiter=',', encoding='utf-8')
+training_data = genfromtxt('./training_data.csv', delimiter=',')
 
-print (unicode(training_data[0],errors="ignore"))
+print (training_data[0])
 
 x1_data = [1, 0, 3, 0, 5]
 x2_data = [0, 2, 0, 4, 0]
